@@ -1,28 +1,0 @@
-PatientIdPatientNameDoctorName Doctor'sAppointmentDateOrderedPrescription01HelenDr. Stephen
-
-9/5/2024zyrtec02WubitDr. Elizabeth
-9/6/2024TylenolThis is my first Assignment
-
-Raw Based Relational Patient Table 
-
-
-
-Column Based Relational Patient Table 
-       
-       Patient Table
-PatientIDPatientName01Helen02Wubit       
-Doctor Table
-DoctorEmploymentIDDoctorNameDEI1Dr. Stephen
-DEI2Dr. Elizabeth
-
-Doctor Appointment Table
-PatientIDApopintmentDate019/5/2024029/6/2024
-Prescription Table
-PrescriptionRxNumberMedicationName010203zyrtec121221Tylenol
-
-PatientPrescription Tabel
-PatientIDPrescriptionRxNumber0101020302121221
-PatientDoctor Tabel
-PatientIDDoctorID01DEI102DEI2
-
-
