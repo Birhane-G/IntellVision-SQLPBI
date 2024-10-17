@@ -1,4 +1,12 @@
+Alter table product
+Add lastname Varchar(20),email Varchar(20),phone Varchar(20);
+Alter table customer
+Add lastname Varchar(20);
+Alter table product
+Add quantity Varchar(30);
+
 USE ecommerce;
+
 
 INSERT INTO Product (name, description, quantity, price, category, brand, in_stock, created_at)
 VALUES
@@ -25,7 +33,7 @@ VALUES
 
 SELECT * FROM Product;
 
-INSERT INTO Customer (firstName, lastName, email, phone)
+INSERT INTO Customer (Name, lastName, email, phone)
 VALUES
   ('John', 'Doe', 'john.doe@example.com', '555-1234'),
   ('Jane', 'Smith', 'jane.smith@example.com', '555-5678'),
@@ -48,7 +56,7 @@ VALUES
   ('Alexander', 'Jimenez', 'alexander.jimenez@example.com', '555-1357'),
   ('Emma', 'Vargas', 'emma.vargas@example.com', '555-2468');
 
-INSERT INTO Customer_Addresse (customer_id, address_type, address_line1, address_line2, city, state, country, zip_code)
+INSERT INTO Customer_Addresses (customer_id, address_type, address_line1, address_line2, city, state, country, zip_code)
 VALUES
   (1, 'billing', '123 Main St', 'Apt 1', 'Anytown', 'CA', 'USA', '12345'),
   (1, 'shipping', '456 Oak Rd', '', 'Somecity', 'NY', 'USA', '54321'),
@@ -61,7 +69,7 @@ VALUES
   (7, 'billing', '357 Pine Ln', 'Unit 3', 'Largeville', 'PA', 'USA', '67890'),
   (8, 'billing', '951 Maple Dr', '', 'Tinycity', 'OR', 'USA', '09876');
 
-INSERT INTO orders (customer_id, order_date, total_amount, Order_status)
+INSERT INTO Oreder(customer_id, order_date, total_amount, Order_status)
 VALUES
   (1, '2023-04-15', 1299.99, 'delivered'),
   (2, '2023-05-01', 799.99, 'shipped'),
